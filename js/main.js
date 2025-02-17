@@ -22,10 +22,6 @@ if (window.location.href.endsWith("about.html")) {
     about_link_btn.style.background = "#e8f0fe";
   }
 
-nav_main.addEventListener('click', () => {
-  nav_width();
-});
-
 
 function nav_width()
 {
@@ -55,4 +51,8 @@ function nav_width()
     
 }
 
+
+nav_main.addEventListener('click', () => {
+  nav_width();
+});
 
