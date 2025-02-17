@@ -4,10 +4,6 @@
     margin: 0px;
 }
 
-body{
-    overflow: hidden;
-}
-
 #nav_main{
     position: relative;
     top: 0px;
@@ -116,7 +112,6 @@ body{
     top: 20px;
     margin-left: 30px;
     padding: 8px;
-    background: #0000000a;
     border-radius: 4px;
 }
 
