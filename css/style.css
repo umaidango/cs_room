@@ -105,6 +105,49 @@ body{
 }
 
 
+.title_txt{
+    display: inline-block;
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: auto;
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+    padding: 8px;
+    background: #0000000a;
+    border-radius: 4px;
+}
+
+.title_txt span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+#picup{
+    animation: f_anime1 0.5s;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#picup img{
+    width: 1000px;
+}
+
+
+@keyframes f_anime1{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 
 
   @media screen and (max-width: 763px) {
@@ -127,4 +170,7 @@ body{
         min-width: 50px;
         max-width: 300px;
     }
+
 }
+
+
