@@ -52,7 +52,3 @@ function nav_width()
 }
 
 
-nav_main.addEventListener('click', () => {
-  nav_width();
-});
-
