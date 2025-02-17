@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=M+PLUS+2:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+}
+
+body{
+    overflow: hidden;
+}
+
+#nav_main{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px #eee solid;
+}
+
+#nav_main img{
+    height: 72px;
+    margin-left: 10px;
+}
+
+#menu_img{
+    height: 24px;
+    margin: 15px;
+}
+
+#menu_btn{
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 8px;
+}
+
+#logo{
+    display: inline-block;
+    vertical-align: 75%;
+}
+#logo span{
+  font-size: 25px;
+  margin-left: 12px;
+  color: #333;
+  vertical-align: 10%;
+}
+
+#logo img{
+    height: 42px;
+    vertical-align: -32%;
+}
+
+
+#nav_left{
+    height: 100vh;
+    background: #fff;
+    border-right: 1px #eee solid;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#content{
+    background-color: #fff;
+    width: 100%;
+    display: inline-block;
+    overflow: scroll;
+}
+
+#container{
+    display: flex;
+}
+
+.nav_left_btn {
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    margin: 15px 15px 0px 0px;
+    width: 95%;
+    cursor: pointer;
+    text-align: left;
+    height: 50px;
+    background: #fff;
+}
+
+.nav_left_btn_noselect{
+    background: #fff;
+}
+
+.nav_left_btn_selected{
+    background: #e8f0fe;
+}
+
+.nav_left_btn span{
+    border-radius: 0px 25px 25px 0px;
+    padding: 12px;
+    font-size: .875rem;
+    vertical-align: 25%;
+}
+
+.nav_left_btn:hover{
+    background: rgb(246, 246, 246);
+}
+
+
+
+
+  @media screen and (max-width: 763px) {
+    .nav_left_btn_content_box_text{
+        display: none;
+    }
+
+    #nav_left{
+        width: 75px;
+    }
+  }
+
+  @media screen and (min-width:1000px) {
+    .nav_left_btn_content_box_text{
+        display: inline-block;
+    }
+
+    #nav_left{
+        width: 30%;
+        min-width: 50px;
+        max-width: 300px;
+    }
+}
