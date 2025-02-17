@@ -5,6 +5,12 @@ if (window.location.href.endsWith("index.html")) {
     home_link_btn.style.background = "#e8f0fe";
   }
 
+
+  if (window.location.href.endsWith("")) {
+    home_link_btn.style.background = "#e8f0fe";
+  }
+
+
 if (window.location.href.endsWith("about.html")) {
     about_link_btn.style.background = "#e8f0fe";
   }
