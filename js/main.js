@@ -38,13 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let nav_v = 0;
 const nav_left_c_b_text = document.querySelectorAll('.nav_left_btn_content_box_text');
 
-if (window.location.href.endsWith("index.html")) {
-    home_link_btn.style.background = "#e8f0fe";
-  }
 
-if (window.location.href.endsWith("about.html")) {
-    about_link_btn.style.background = "#e8f0fe";
-  }
 
 
 function nav_width()
