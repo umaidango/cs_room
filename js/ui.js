@@ -18,3 +18,23 @@ fetch('/load/header.html')
   });
 
   
+  fetch('/load/links.html')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.text();
+  })
+  .then(html => {
+    const navLeft = document.getElementById('nav_left');
+    if (navLeft) {
+      navLeft.innerHTML = html;
+    } else {
+      console.error('Element with id "nav_left" not found.');
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching nav_left.html:', error);
+  });
+
+  

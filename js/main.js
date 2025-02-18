@@ -1,15 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
+  Promise.all([
     fetch('/load/header.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('header_main').innerHTML = html;
-        // HTML の挿入後にイベントリスナーを設定
-        document.getElementById('header_main').addEventListener('click', () => {
-          // イベント処理
-        });
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text();
+      }),
+    fetch('/load/links.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text();
+      })
+  ])
+    .then(([headerHtml, linksHtml]) => {
+      document.getElementById('header_main').innerHTML = headerHtml;
+      document.getElementById('nav_left').innerHTML = linksHtml;
+
+      // イベントリスナーは HTML 挿入後に設定
+      document.getElementById('header_main').addEventListener('click', () => {
+        // イベント処理
       });
-  });
-  
+      document.getElementById('nav_left').addEventListener('click', () => {
+        // イベント処理
+      });
+    })
+    .catch(error => {
+      console.error('Error loading HTML:', error);
+      // エラーメッセージを表示するなど、適切な処理を行う
+    });
+});
+
+
 
 let nav_v = 0;
 const nav_left_c_b_text = document.querySelectorAll('.nav_left_btn_content_box_text');
