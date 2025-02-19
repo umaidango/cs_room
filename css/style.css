@@ -223,35 +223,35 @@
 }
 
 
-@media screen and (max-width: 763px) {
+@media screen and (max-width: 1500px) {
     .nav_left_btn_content_box_text{
         display: none;
     }
 
     #nav_left{
-        width: 75px;
+        width: 72px;
     }
 
     #nav_left_c{
-        width: 75px;
+        width: 72px;
     }
   }
 
-  @media screen and (min-width:1000px) {
+  @media screen and (min-width:1500px) {
     .nav_left_btn_content_box_text{
         display: inline-block;
     }
 
     #nav_left{
         width: 30%;
-        min-width: 50px;
-        max-width: 300px;
+        min-width: 65px;
+        max-width: 350px;
     }
 
     #nav_left_c{
         width: 30%;
-        min-width: 50px;
-        max-width: 300px;
+        min-width: 65px;
+        max-width: 350px;
         height: 100vh;
     }
 
