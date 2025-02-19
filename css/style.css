@@ -146,6 +146,26 @@
     }
 }
 
+@keyframes slide_anime1{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide_anime2{
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
 
 
 
@@ -223,6 +243,25 @@
 }
 
 
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+#nav_menu{
+    width: 350px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px #eee solid;
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    animation: slide_anime1 0.3s;
+    
+}
+
 @media screen and (max-width: 1500px) {
     .nav_left_btn_content_box_text{
         display: none;
@@ -264,3 +303,6 @@
     
 
 }
+
+
+
