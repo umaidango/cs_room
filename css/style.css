@@ -2,16 +2,18 @@
 
 *{
     margin: 0px;
+    font-family: Noto Sans JP;
 }
 
 #nav_main{
-    position: relative;
+    position: fixed;
     top: 0px;
     left: 0px;
     background: #fff;
     height: 64px;
     width: 100%;
     border-bottom: 1px #eee solid;
+    z-index: 1000;
 }
 
 #nav_main img{
@@ -57,6 +59,7 @@
     border-right: 1px #eee solid;
     display: inline-block;
     transition: all 0.3s ease;
+    position: fixed;
 
 }
 
@@ -129,7 +132,7 @@
 }
 
 #picup img{
-    width: 1000px;
+    width:  750px;
 }
 
 
@@ -145,12 +148,91 @@
 
 
 
-  @media screen and (max-width: 763px) {
+
+
+
+#main_content{
+    margin: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.big-100{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+#select_menu{
+    border-radius: 5.5px;
+    border: 1px #eee solid;
+    display: inline-block;
+    width: 650px;
+    margin: 25px;
+    text-align: center;
+    
+}
+
+.select_menu_select_win{
+    border-radius: 5.5px;
+    padding: 25px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 0px #ddd;
+    border: 1px #eee solid;
+    margin: 10px;
+    width: 300px;
+    height: 250px;
+}
+
+.select_menu_select_win_text{
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.select_menu_select_win_image{
+    text-align: center;
+}
+
+.select_menu_select_win_image svg{
+    width: 64px;
+    height: 64px;
+    
+}
+
+.center_position{
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.center_position_2{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#nav_main_c{
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px #eee solid;
+}
+
+
+@media screen and (max-width: 763px) {
     .nav_left_btn_content_box_text{
         display: none;
     }
 
     #nav_left{
+        width: 75px;
+    }
+
+    #nav_left_c{
         width: 75px;
     }
   }
@@ -166,9 +248,14 @@
         max-width: 300px;
     }
 
-}
+    #nav_left_c{
+        width: 30%;
+        min-width: 50px;
+        max-width: 300px;
+        height: 100vh;
+    }
 
 
-#main_content{
-    margin: 2.5%;
+    
+
 }
