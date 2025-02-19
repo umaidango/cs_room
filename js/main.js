@@ -25,38 +25,8 @@ const nav_left_c_b_text = document.querySelectorAll('.nav_left_btn_content_box_t
 
 function nav_width()
 {
-  if(nav_left.style.width == "72px")
-  {
-    if(nav_v_2 == 0)
-    {
-      setTimeout(() => {                      
-        nav_left_c_b_text.forEach(nav_left_c_b_text => {
-            nav_left_c_b_text.style = "";
-        });
-      }, "300");
-
-      nav_left.style = "z-index: 999";
-      
-
-      nav_v_2 = 1;
-      
-    }
-
-    else
-      {
-        
-        nav_left.style = "width: 72px";
-            nav_left_c_b_text.forEach(nav_left_c_b_text => {
-                nav_left_c_b_text.style.display = "none";
-            });
-        nav_v_2 = 0;
-        
-      }
-
-
-  }
-
-  else{
+  
+    
     if(nav_v == 0)
         {
             nav_left.style = "width: 72px";
@@ -80,7 +50,7 @@ function nav_width()
             nav_v = 0;
     
         }
-      }
+      
     
 }
 

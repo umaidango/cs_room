@@ -230,11 +230,15 @@
 
     #nav_left{
         width: 72px;
+        z-index: 999;
     }
 
     #nav_left_c{
         width: 72px;
     }
+
+
+
   }
 
   @media screen and (min-width:1500px) {
@@ -246,6 +250,7 @@
         width: 30%;
         min-width: 65px;
         max-width: 350px;
+        height: 100vh;
     }
 
     #nav_left_c{
