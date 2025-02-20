@@ -122,7 +122,15 @@ const mediaQuery = window.matchMedia('(max-width: 1500px)');
 function handleMediaQueryChange(e) {
   if (e.matches) {
    nav_v = 2;
-   document.getElementById('menu_btn').onclick = nav_width_2;
+   menu_btn_m.style.display = 'inline-block';
+   menu_btn.style.display = 'none';
+
+  }
+
+  else{
+    menu_btn_m.style.display = 'none';
+    menu_btn.style.display = 'inline-block';
+
   }
 }
 
