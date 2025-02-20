@@ -67,7 +67,7 @@ function nav_width()
 function nav_width_2()
 {
 
-    if(nav_v == 2)
+    if(nav_v == 0)
         {
 
             nav_left_c_b_text.forEach(nav_left_c_b_text => {
@@ -77,10 +77,10 @@ function nav_width_2()
 
                 
                 nav_menu.style = "display: block;";
-                nav_v = 3;
+                nav_v = 1;
         }
         
-        if(nav_v == 3)
+            else
             {
                 nav_menu.style.animation = "slide_anime2 0.3s";
                 setTimeout(() => {  
@@ -89,7 +89,7 @@ function nav_width_2()
 
                 }, "300");
 
-                nav_v = 2;
+                nav_v = 0;
                 nav_left_c_b_text.forEach(nav_left_c_b_text => {
                     nav_left_c_b_text.style.display = "none";
                 });
@@ -116,25 +116,3 @@ function link3_selected()
     link3_link_btn.style = "background: #e8f0fe";
 }
 
-
-const mediaQuery = window.matchMedia('(max-width: 1500px)');
-
-function handleMediaQueryChange(e) {
-  if (e.matches) {
-   nav_v = 2;
-   menu_btn_m.style.display = 'inline-block';
-   menu_btn.style.display = 'none';
-
-  }
-
-  else{
-    menu_btn_m.style.display = 'none';
-    menu_btn.style.display = 'inline-block';
-
-  }
-}
-
-
-
-// 初期状態の判定
-handleMediaQueryChange(mediaQuery);
