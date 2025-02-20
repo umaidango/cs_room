@@ -40,7 +40,34 @@ function nav_width()
         }
 
 
-        if(nav_v == 2)
+        
+        
+            
+    
+            
+        else
+        {
+
+                nav_left.style = "";
+            
+                setTimeout(() => {                      
+                    nav_left_c_b_text.forEach(nav_left_c_b_text => {
+                        nav_left_c_b_text.style = "";
+                    });
+                }, "300");
+    
+                nav_v = 0;
+            }
+    
+        
+      
+    
+}
+
+function nav_width_2()
+{
+
+    if(nav_v == 2)
         {
 
             nav_left_c_b_text.forEach(nav_left_c_b_text => {
@@ -51,16 +78,9 @@ function nav_width()
                 
                 nav_menu.style = "display: block;";
                 nav_v = 3;
-
         }
         
-        
-            
-    
-            
-        else
-        {
-            if(nav_v == 3)
+        if(nav_v == 3)
             {
                 nav_menu.style.animation = "slide_anime2 0.3s";
                 setTimeout(() => {  
@@ -75,24 +95,7 @@ function nav_width()
                 });
 
                 
-                
             }
-
-            else{
-                nav_left.style = "";
-            
-                setTimeout(() => {                      
-                    nav_left_c_b_text.forEach(nav_left_c_b_text => {
-                        nav_left_c_b_text.style = "";
-                    });
-                }, "300");
-    
-                nav_v = 0;
-            }
-    
-        }
-      
-    
 }
 
 
@@ -119,8 +122,11 @@ const mediaQuery = window.matchMedia('(max-width: 1500px)');
 function handleMediaQueryChange(e) {
   if (e.matches) {
    nav_v = 2;
+   document.getElementById('menu_btn').onclick = nav_width_2;
   }
 }
+
+
 
 // 初期状態の判定
 handleMediaQueryChange(mediaQuery);
