@@ -277,6 +277,20 @@ a{
     
 }
 
+.box_02_w{
+    margin: 10px;
+    padding: 30px;
+    font-size: 1.2rem;
+    margin-left: 2.5%;
+    
+}
+
+.box_02_w span{
+    display: inline-block;
+    margin-top: 22px;
+    font-size: 1rem;
+}
+
 .link_content_01{
     line-height: 42px;
     text-align: left;
@@ -352,3 +366,12 @@ a span:hover{
 
 
 
+
+.txt_title span {
+    display: inline-block;
+    height: 48px;
+    width: 8px;
+    vertical-align: -22%;
+    margin-right: 10px;
+    background: #74beff;
+  }
