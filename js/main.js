@@ -25,9 +25,10 @@ let nav_v_2 = 0;
 const nav_left_c_b_text = document.querySelectorAll('.nav_left_btn_content_box_text');
 
 
+
+
 function nav_width()
 {
-  
     
     if(nav_v == 0)
         {
@@ -37,6 +38,7 @@ function nav_width()
             });
     
             nav_v = 1;
+      
         }
 
 
@@ -57,15 +59,22 @@ function nav_width()
                 }, "300");
     
                 nav_v = 0;
+           
             }
     
         
+            nav_left_c.style.width = nav_left.style.width;
+
       
     
 }
 
 function nav_width_2()
 {
+
+
+    
+
 
     if(nav_v == 0)
         {
@@ -116,3 +125,8 @@ function link3_selected()
     link3_link_btn.style = "background: #e8f0fe";
 }
 
+
+function link4_selected()
+{
+    link4_link_btn.style = "background: #e8f0fe";
+}
